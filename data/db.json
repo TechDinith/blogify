@@ -1,28 +1,86 @@
 {
   "blogs": [
     {
-      "title": "Test2",
-      "body": "nothing",
-      "author": "red",
+      "title": "Getting Started with TypeScript",
+      "body": "# Why TypeScript?\n\nTypeScript adds **static typing** to JavaScript, catching errors before runtime.\n\n## Benefits\n- Better tooling\n- Safer refactors\n- Self-documenting code\n\n```ts\nconst greet = (name: string) => `Hello, ${name}`;\n```",
+      "author": "mario",
+      "authorId": "seed-1",
+      "tags": [
+        "typescript",
+        "javascript",
+        "tutorial"
+      ],
+      "category": "Technology",
+      "likes": 6,
+      "likedBy": [
+        "seed-1"
+      ],
+      "createdAt": "2026-10-20T10:00:00.000Z",
+      "id": 1
+    },
+    {
+      "title": "Designing Better UIs",
+      "body": "Great UI is about **clarity** and **consistency**.\n\n> Design is not just what it looks like — it's how it works.\n\nUse spacing, color, and typography deliberately.",
+      "author": "yoshi",
+      "authorId": "seed-2",
+      "tags": [
+        "design",
+        "ui",
+        "ux"
+      ],
+      "category": "Design",
+      "likes": 3,
+      "likedBy": [],
+      "createdAt": "2026-10-22T12:30:00.000Z",
       "id": 2
     },
     {
-      "title": "Test3",
-      "body": "mid",
-      "author": "fred",
-      "id": 3
-    },
-    {
-      "title": "my blog",
-      "body": "just",
-      "author": "mario",
-      "id": 4
-    },
-    {
       "title": "My navigation test",
-      "body": "just a navigation",
+      "body": "just a navigation test post to verify routing works end-to-end.",
       "author": "yoshi",
+      "authorId": "seed-2",
+      "tags": [
+        "testing"
+      ],
+      "category": "Tutorial",
+      "likes": 1,
+      "likedBy": [],
+      "createdAt": "2026-10-24T09:15:00.000Z",
       "id": 9
+    }
+  ],
+  "comments": [
+    {
+      "blogId": 1,
+      "author": "yoshi",
+      "authorId": "seed-2",
+      "body": "Great intro! TypeScript really changed how I write JS.",
+      "createdAt": "2026-10-21T08:00:00.000Z",
+      "id": 1
+    },
+    {
+      "blogId": "1",
+      "author": "mario",
+      "authorId": "seed-1",
+      "body": "cvcv",
+      "createdAt": "2026-10-27T09:38:31.565Z",
+      "id": 2
+    }
+  ],
+  "users": [
+    {
+      "id": "seed-1",
+      "name": "mario",
+      "email": "mario@example.com",
+      "password": "password",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=mario"
+    },
+    {
+      "id": "seed-2",
+      "name": "yoshi",
+      "email": "yoshi@example.com",
+      "password": "password",
+      "avatar": "https://api.dicebear.com/7.x/initials/svg?seed=yoshi"
     }
   ]
 }
